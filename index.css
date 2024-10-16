@@ -1,0 +1,64 @@
+
+/* 주 색상 변경은 Ctrl + H 단축키 누른 후 0078AA 색상을 원하는 다른 색상으로 모두 바꾸기 */
+/* index.html영역 CSS */
+main {}
+main > h1 {padding:50px 0; font-size:2rem; line-height:1.2; letter-spacing:-0.02rem;}
+main > h1 span {font-size:2rem; color:#0078AA; font-weight:700;}
+main section {}
+main section .project_web {}
+main section .project_web .web {margin:0 0 100px;}
+main section .project_web .web h1 {text-transform:uppercase; padding:20px 0; margin:20px 0; font-size:1.3rem; color:#0078AA; font-weight: 700;}
+main section .project_web .web .project {display:flex; flex-flow:row nowrap; justify-content: space-between; align-items: center;}
+/* 프로젝트 이미지 배경이미지 부분 */
+main section .project_web .web .project .img {height:300px; width:500px; background-size:cover; background-position:center top;}
+main section .project_web .web .project .img1 {background-image:url(../images/mockup1.jpg)}
+main section .project_web .web .project .img2 {background-image:url(../images/mockup2.jpg)}
+main section .project_web .web .project .img3 {background-image:url(../images/mockup3.jpg)}
+main section .project_web .web .project .content {width:calc(100% - 500px); padding-left:20px;}
+main section .project_web .web .project .content dl {display:flex; flex-flow:row wrap;}
+main section .project_web .web .project .content dl dt {width:25%; padding:10px 0; font-weight: 700; color:#0078AA;}
+main section .project_web .web .project .content dl dd {width:75%; padding:10px 0;}
+main section .project_web .web .project .content .link {display:flex; flex-flow:row wrap; margin-top:50px;}
+main section .project_web .web .project .content .link a {text-transform:capitalize; background:#0078AA; border:2px solid #0078AA; color:#fff; border-radius:7px; margin-bottom:5px; margin-right:5px; padding:10px;}
+main section .project_web .web .project .content .link a:hover {border:2px solid #0078AA; color:#0078AA; background:#fff;}
+main section .project_design {}
+main section .project_design h1 {text-transform:uppercase; padding:20px 0; margin:20px 0; font-size:1.3rem; color:#0078AA; font-weight: 700;}
+/* 첫번째 디자인 프로젝트 */
+main section .project_design .design1 {display:flex; flex-flow:row wrap; justify-content:space-between;}
+main section .project_design .design1 a {height:300px; width:24%; margin:10px; background-size:cover; background-position:center top; border:1px solid #ddd;}
+main section .project_design .design1 a:nth-child(1) {background-image:url(../images/sns/sns1.jpg)}
+main section .project_design .design1 a:nth-child(2) {background-image:url(../images/sns/sns2.jpg)}
+main section .project_design .design1 a:nth-child(3) {background-image:url(../images/sns/sns3.jpg)}
+main section .project_design .design1 a:nth-child(4) {background-image:url(../images/sns/sns4.jpg)}
+main section .project_design .design1 a:nth-child(5) {background-image:url(../images/sns/sns5.jpg)}
+main section .project_design .design1 a:nth-child(6) {background-image:url(../images/sns/sns6.jpg)}
+main section .project_design .design1 a:nth-child(7) {background-image:url(../images/sns/sns7.jpg)}
+main section .project_design .design1 a:nth-child(8) {background-image:url(../images/sns/sns8.jpg)}
+main section .project_design .design1 a:nth-child(9) {background-image:url(../images/sns/sns9.jpg)}
+main section .project_design .design1 a:nth-child(10) {background-image:url(../images/sns/sns10.jpg)}
+main section .project_design .design1 a:nth-child(11) {background-image:url(../images/sns/sns11.jpg)}
+main section .project_design .design1 a:nth-child(12) {background-image:url(../images/sns/sns12.jpg)}
+/* 두번째 디자인 프로젝트  */
+main section .project_design .design2 {display:flex; flex-flow:row wrap; justify-content:space-between;}
+main section .project_design .design2 a {height:200px; width:500px; margin:10px; background-size:cover; background-position:center top; border:1px solid #ddd;}
+main section .project_design .design2 a:nth-child(1) {background-image:url(../images/bnr/bnr1.jpg)}
+main section .project_design .design2 a:nth-child(2) {background-image:url(../images/bnr/bnr2.jpg)}
+main section .project_design .design2 a:nth-child(3) {background-image:url(../images/bnr/bnr3.jpg)}
+main section .project_design .design2 a:nth-child(4) {background-image:url(../images/bnr/bnr4.jpg)}
+/* 세번째 디자인 프로젝트  */
+main section .project_design .design3 {display:flex; flex-flow:row wrap; justify-content:space-between;}
+main section .project_design .design3 a {height:200px; width:500px; margin:10px; background-size:cover; background-position:center top; border:1px solid #ddd;}
+main section .project_design .design3 a:nth-child(1) {background-image:url(../images/detail/detail1.jpg)}
+main section .project_design .design3 a:nth-child(2) {background-image:url(../images/detail/detail2.jpg)}
+main section .project_design .design3 a:nth-child(3) {background-image:url(../images/detail/detail3.jpg)}
+main section .project_design .design3 a:nth-child(4) {background-image:url(../images/detail/detail4.jpg)}
+main section .project_design .design3 a:nth-child(5) {background-image:url(../images/detail/detail5.jpg)}
+main section .project_design .design3 a:nth-child(6) {background-image:url(../images/detail/detail6.jpg)}
+
+/* 반응형구성 */
+@media screen and (max-width:850px){
+    main section .project_web .web .project {flex-flow:column nowrap;}
+    main section .project_web .web .project .img {width:100%;}
+    main section .project_web .web .project .content {width:100%;}
+    main section .project_web .web .project .content .link a {}
+}/*1024 end*/
